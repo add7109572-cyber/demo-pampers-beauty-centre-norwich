@@ -1,20 +1,53 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pampers Beauty Centre — Norwich</title><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
-<style>body{margin:0;font-family:'Merriweather',system-ui,sans-serif;background:#ecfdf5;color:#222}
-nav{display:flex;justify-content:space-between;padding:16px 22px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)} nav a{color:#065f46;text-decoration:none;font-weight:700;margin-left:14px}
-.hero{padding:40px 22px} .hero img{width:100%;max-height:420px;object-fit:cover;border-radius:20px}
-.hero.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .hero.split img{height:380px}
-.hero.dark{background:#111;color:#fff} .hero.dark img{opacity:.85} .hero.full{position:relative;padding:0} .hero.full img{max-height:70vh} .hero.full div{position:absolute;bottom:30px;left:24px;color:#fff;text-shadow:0 2px 12px #000}
-.hero.center{text-align:center} .hero.center img{max-width:720px;margin:20px auto;display:block}
-h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05} .btn{display:inline-block;background:#065f46;color:#fff;padding:13px 26px;border-radius:20px;text-decoration:none;font-weight:800}
-section{max-width:1080px;margin:auto;padding:36px 22px} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.svc{background:#fff;padding:20px;border-radius:20px;box-shadow:0 6px 18px rgba(0,0,0,.07);transition:.3s} .svc:hover{transform:translateY(-6px)} .svc a{color:#065f46;font-weight:700;text-decoration:none}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px} .gallery img{width:100%;height:200px;object-fit:cover;border-radius:20px}
-.note{background:#fef3c7;padding:12px;border-radius:10px;text-align:center;margin-top:24px}
-@media(max-width:700px){.hero.split{grid-template-columns:1fr}}
-</style></head><body><nav><strong>Pampers Beauty Centre</strong><span><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#book">Book</a></span></nav>
-<header class="hero editorial"><p>Norwich</p><h1>Pampers Beauty Centre</h1><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80" alt="Pampers Beauty Centre"></header>
-<section id="services"><h2>Services at Pampers Beauty Centre</h2><div class="grid"><div class="svc"><h3>CACI Facials</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>DermaQuest Facials</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Massage</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Hair Cuts & Colour</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div></div></section>
-<section id="gallery"><h2>Gallery</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1200&q=80" alt="Pampers Beauty Centre" loading="lazy"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1200&q=80" alt="Pampers Beauty Centre" loading="lazy"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=80" alt="Pampers Beauty Centre" loading="lazy"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=80" alt="Pampers Beauty Centre" loading="lazy"></div></section>
-<section id="book"><div style="background:#065f46;color:#fff;padding:36px;border-radius:20px;text-align:center"><h2>Visit Pampers Beauty Centre in Norwich</h2><p>Designed uniquely for this salon.</p><a class="btn" style="background:#fff;color:#065f46" href="#">Book now →</a></div><div class="note">Demo concept only — not the salon's official website. Photos are illustrative stock photos.</div></section>
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pampers Beauty Centre — Norwich | Redesign Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Jost',system-ui,sans-serif;background:#f7fee7;color:#222}
+.banner{background:#111;color:#fff;text-align:center;padding:12px 16px;font-weight:700;font-size:15px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+nav b{font-family:'Jost',system-ui,sans-serif;font-size:22px;color:#365314}
+nav a{color:#365314;text-decoration:none;font-weight:700;margin-left:14px}
+.hero{padding:38px 22px;max-width:1080px;margin:0 auto}
+.hero.split img{width:100%;border-radius:20px;object-fit:cover;max-height:420px}
+.hero h1{font-family:'Jost',system-ui,sans-serif;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;color:#365314}
+.hero p.lead{font-size:19px;line-height:1.6}
+.btn{display:inline-block;background:#365314;color:#fff;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin:8px 8px 8px 0}
+.btn.ghost{background:#fff;color:#365314;border:2px solid #365314}
+section{max-width:1080px;margin:0 auto;padding:26px 22px}
+h2{font-family:'Jost',system-ui,sans-serif;color:#365314;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 18px rgba(0,0,0,.07);transition:transform .25s}
+.card:hover{transform:translateY(-5px)}
+.prices{background:#fff;border-radius:16px;padding:8px 22px}
+.price{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:14px}
+.note{background:#fff8e1;border:1px solid #f0d98c;border-radius:12px;padding:16px}
+footer{background:#111;color:#ddd;text-align:center;padding:26px 18px;line-height:1.7}
+footer a{color:#fff}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero,section{animation:fade .7s ease both}
+</style></head><body>
+<div class="banner">Demo concept only — a redesign preview of Pampers Beauty Centre’s website, not their full official site</div>
+<nav><b>Pampers</b><span><a href="#services">Services</a><a href="#visit">Visit</a></span></nav>
+<div class="hero split">
+<h1>It&#x27;s time to pamper yourself.</h1>
+<p class="lead">Hair, beauty and aesthetics in Norwich city centre, rated 4.9 from 128 Google reviews — famous for CACI facials, with an experienced hair team led by Mauro, Heather, Caroline, Hadrian, Simon, Alistar and Emma.</p>
+<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80" alt="Salon interior — illustrative stock photo">
+<p><a class="btn" href="https://www.pampersbeautycentre.com/">Visit the salon&rsquo;s real website &rarr;</a>
+<a class="btn ghost" href="tel:+441603660385">Call 01603 660385</a></p>
+<p class="note">This demo does not take bookings. It previews a redesign &mdash; booking stays with the salon&rsquo;s real website and phone, exactly as today.</p>
+</div>
+<section id="services"><h2>What we do</h2><div class="grid"><div class="card"><h3>CACI facials</h3><p>Non-surgical facials that lift, tone and firm using gentle microcurrent — ideal before a big event.</p></div><div class="card"><h3>Hair</h3><p>Cuts, colour, blow-dries, styling and extensions from the experienced hair team.</p></div><div class="card"><h3>Beauty &amp; aesthetics</h3><p>DermaQuest facials, advanced hair removal, Lumenis laser and skin rejuvenation, tanning, massage and holistic treatments, hands and feet, makeup and eyes.</p></div><div class="card"><h3>One clear booking split</h3><p>Beauty treatments via Phorest; hair appointments by phone or email, so the salon can match you with the right stylist.</p></div></div></section>
+<section><h2>CACI facials — highlights from the salon&#x27;s own CACI page</h2><div class="prices"><div class="price"><span>CACI Lip Booster (15 mins)</span><b>from £34</b></div><div class="price"><span>CACI short facials</span><b>from £40–£50</b></div><div class="price"><span>CACI Signature facial (75 mins)</span><b>£95</b></div><div class="price"><span>CACI Synergy Advanced facial (1 hr 45 mins)</span><b>£129</b></div><div class="price"><span>CACI courses of 10</span><b>£320–£1,290</b></div></div></section>
+<section><h2>What this redesign fixes</h2><ul><li>The split booking routes are stated plainly in one block, instead of buried in the page.</li><li>A short priced highlights list leads, rather than the full CACI list overwhelming a first visit.</li><li>The stray unfinished wording on the real homepage is dropped, and repeated footers are removed.</li></ul></section>
+<section><h2>Gallery</h2><div class="gallery">
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80" alt="Hair styling — illustrative stock photo">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200&q=80" alt="Salon treatment — illustrative stock photo">
+<img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1200&q=80" alt="Salon detail — illustrative stock photo">
+</div><p>Photos are illustrative stock photos, not photos of this salon.</p></section>
+<section id="visit"><h2>Visit us</h2><p>28 London Street, Norwich NR2 1LD</p><p>Phone: 01603 660385 · Email: info@pampersbeautycentre.com</p><p>Hours: Mon closed, Tue 9am–5pm, Wed–Fri 9am–6pm, Sat 9am–4:30pm, Sun closed</p><p>Beauty: check live availability via Phorest on the salon&#x27;s real website. Hair: call or email to match your stylist.</p></section>
+<footer><div class="banner">Demo concept only — a redesign preview of Pampers Beauty Centre’s website, not their full official site</div><br>Demo concept only. Photos are illustrative stock photos.
+<br>Real website: <a href="https://www.pampersbeautycentre.com/">https://www.pampersbeautycentre.com/</a></footer>
 </body></html>
